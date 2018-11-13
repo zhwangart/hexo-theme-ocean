@@ -73,9 +73,11 @@ Ocean 使用[Fancybox]展示照片。你可以使用标记语法或 fancybox 标
 
 ### 感谢
 
-[Hexo]: https://hexo.io/
-[Landscape]: https://hexojs.github.io/hexo-theme-landscape/
-[Fancybox]: http://fancyapps.com/fancybox/
-[Grunt]: http://gruntjs.com/
-[hexo-generate-feed]: https://github.com/hexojs/hexo-generator-feed
+- [Preview]
+- [Hexo](https://hexo.io/)
+- [Landscape](https://hexojs.github.io/hexo-theme-landscape/)
+- [Fancybox](http://fancyapps.com/fancybox/)
+- [Grunt](http://gruntjs.com/)
+- [hexo-generate-feed](https://github.com/hexojs/hexo-generator-feed)
+
 # hexo-theme-ocean
