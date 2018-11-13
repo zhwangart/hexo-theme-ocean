@@ -73,7 +73,10 @@ Ocean 使用[Fancybox]展示照片。你可以使用标记语法或 fancybox 标
 
 ### 感谢
 
+<<<<<<< HEAD
 - [Preview]
+=======
+>>>>>>> d9baf2b21294a7fc4157476f09263512049444a7
 - [Hexo](https://hexo.io/)
 - [Landscape](https://hexojs.github.io/hexo-theme-landscape/)
 - [Fancybox](http://fancyapps.com/fancybox/)
