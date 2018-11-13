@@ -1,0 +1,37 @@
+
+<button class="navbar-toggle"></button>
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="<%- url_for() %>"><img src="/images/chick.svg" alt="<%= config.title %>"></a>
+    </div>
+    <ul class="nav nav-main">
+        <% for (var i in theme.menu){ %>
+        <li class="nav-item">
+            <a class="nav-item-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+        </li>
+        <% } %>
+            <li class="nav-item">
+                <a class="nav-item-link nav-item-search" title="<%= __('search') %>">
+                    <i class="fe fe-search"></i>
+                    搜索
+                </a>
+            </li>
+    </ul>
+</nav>
+
+<nav class="navbar navbar-bottom">
+    <ul class="nav">
+        <li class="nav-item">
+            <% if (theme.rss){ %>
+                <a class="nav-item-link" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>">
+                    <i class="fe fe-feed"></i>
+                </a>
+            <% } %>
+        </li>
+    </ul>
+</nav>
+
+<div class="search-form-wrap">
+    <%- partial('post/search') %>
+</div>

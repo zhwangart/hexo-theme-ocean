@@ -1,0 +1,49 @@
+.navbar
+  position relative
+  padding-top 3rem
+  text-align center
+  .nav
+    list-unstyled()
+    .nav-item-link
+      display block
+      padding 1rem;
+      color sea-dark
+      text-decoration none
+      cursor pointer
+      &:hover
+        color link-hover-color
+    &.nav-main
+      .nav-item-link
+        &::before, i.fe
+          display block
+          line-height 1
+        &::before
+          font-family 'feathericon'
+      .nav-item
+        &:nth-child(1)
+          .nav-item-link
+            &::before
+              content '\f12f'
+        &:nth-child(2)
+          .nav-item-link
+            &::before
+              content '\f12a'
+        &:nth-child(3)
+          .nav-item-link
+            &::before
+              content '\f1a9'
+        &:nth-child(4)
+          .nav-item-link
+            &::before
+              content '\f174'
+
+.navbar-bottom
+  position absolute
+  bottom 0
+  width 100%
+
+.logo
+  text-align center
+  img
+    width 29px
+

@@ -1,0 +1,45 @@
+clearfix()
+  &::before, &::after
+    content ""
+    display table
+    clear both
+
+hide-text()
+  text-indent: 100%
+  white-space: nowrap
+  overflow: hidden
+
+list-unstyled()
+  list-style none
+  padding-left 0
+  margin-left 0
+
+border-radius(n)
+  -webkit-border-radius n
+  -moz-border-radius n
+  border-radius n
+
+border-top-radius(n)
+  border-top-left-radius n
+  border-top-right-radius n
+
+border-bottom-radius(n)
+  border-bottom-left-radius n
+  border-bottom-right-radius n
+
+transform-center() {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+transition(transition)
+  transition transition
+
+
+rounded-circle(size)
+  width size
+  height size
+  border-radius size/2
+
+// Media queries

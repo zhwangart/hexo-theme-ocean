@@ -1,75 +1,69 @@
-# Landscape
+# Ocean
 
-A brand new default theme for [Hexo].
+Ocean 是基于 Landscape 中的功能设计的一个 Hexo 主题
 
-- [Preview](http://hexo.io/hexo-theme-landscape/)
+- [Preview](https://zhwangart.github.io)
 
-## Installation
-
-### Install
+### 安装
 
 ``` bash
-$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
+$ git clone https://github.com/zhwangart/hexo-theme-ocean.git
 ```
 
-**Landscape requires Hexo 2.4 and above.** If you would like to enable the RSS, the [hexo-generate-feed] plugin is also required.
+**所以跟 Landscape 一样 Ocean 需要 Hexo 2.4 及以上版本。** 如果您想启用RSS，还需要[hexo-generate-feed]插件。
 
-### Enable
+### 启用
 
-Modify `theme` setting in `_config.yml` to `landscape`.
+在 `_config.yml` 中设置 `theme` 为 `Ocean`.
 
-### Update
+``` yml
+theme: ocean
+```
+
+### 更新
 
 ``` bash
-cd themes/landscape
+cd themes/ocean
 git pull
 ```
 
-## Configuration
+### 配置结构
+
+并没有删除 Landscape 中 Sidebar 跟 Widgets 的配置信息，只是注掉了代码。另外 Ocean 新增了本地搜索
 
 ``` yml
-# Header
 menu:
-  Home: /
-  Archives: /archives
+  首页: /
+  归档: /archives
+  相册: /gallery
+  关于: /about
 rss: /atom.xml
 
 # Content
 excerpt_link: Read More
 fancybox: true
 
-# Sidebar
-sidebar: right
-widgets:
-- category
-- tag
-- tagcloud
-- archives
-- recent_posts
-
 # Miscellaneous
 google_analytics:
 favicon: /favicon.png
 twitter:
 google_plus:
+
+# Local search
+# Dependencies: https://github.com/flashlab/hexo-generator-search
+local_search:
+  enable: true
+  # if auto, trigger search by changing input
+  # if manual, trigger search by pressing enter key or search button
+  trigger: auto
+  # show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  unescape: true
 ```
-
-- **menu** - Navigation menu
-- **rss** - RSS link
-- **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
-- **fancybox** - Enable [Fancybox]
-- **sidebar** - Sidebar style. You can choose `left`, `right`, `bottom` or `false`.
-- **widgets** - Widgets displaying in sidebar
-- **google_analytics** - Google Analytics ID
-- **favicon** - Favicon path
-- **twitter** - Twiiter ID
-- **google_plus** - Google+ ID
-
-## Features
 
 ### Fancybox
 
-Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
+Ocean 使用[Fancybox]展示照片。你可以使用标记语法或 fancybox 标签插件来添加你的照片。
 
 ```
 ![img caption](img url)
@@ -77,37 +71,13 @@ Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax o
 {% fancybox img_url [img_thumbnail] [img_caption] %}
 ```
 
-### Sidebar
+### 感谢
 
-You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
+- [Preview]
+- [Hexo](https://hexo.io/)
+- [Landscape](https://hexojs.github.io/hexo-theme-landscape/)
+- [Fancybox](http://fancyapps.com/fancybox/)
+- [Grunt](http://gruntjs.com/)
+- [hexo-generate-feed](https://github.com/hexojs/hexo-generator-feed)
 
-Landscape provides 5 built-in widgets:
-
-- category
-- tag
-- tagcloud
-- archives
-- recent_posts
-
-All of them are enabled by default. You can edit them in `widget` setting.
-
-## Development
-
-### Requirements
-
-- [Grunt] 0.4+
-- Hexo 2.4+
-
-### Grunt tasks
-
-- **default** - Download [Fancybox] and [Font Awesome].
-- **fontawesome** - Only download [Font Awesome].
-- **fancybox** - Only download [Fancybox].
-- **clean** - Clean temporarily files and downloaded files.
-
-[Hexo]: https://hexo.io/
-[Fancybox]: http://fancyapps.com/fancybox/
-[Font Awesome]: http://fontawesome.io/
-[Grunt]: http://gruntjs.com/
-[hexo-generate-feed]: https://github.com/hexojs/hexo-generator-feed
 # hexo-theme-ocean

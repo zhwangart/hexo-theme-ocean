@@ -1,0 +1,56 @@
+
+.fancybox-skin
+  color sea !important
+  -webkit-border-radius 0 !important
+  -moz-border-radius 0 !important
+  border-radius 0 !important
+
+
+.fancybox-close, .fancybox-nav span
+  background none !important
+  width 3rem !important
+  height 3rem !important
+  color white
+  line-height 1
+  text-align center
+  text-decoration none
+  &::before
+    font-family 'feathericon'
+    font-size 3rem
+
+
+.fancybox-close
+  position fixed !important
+  top 1rem !important
+  right 1rem !important
+  background none !important
+  &::before
+    content '\f114'
+  &:hover
+    color red
+
+.fancybox-nav
+  position fixed !important
+  width 20% !important
+
+.fancybox-nav span
+  margin-top -1.5rem !important
+  visibility visible !important
+  background none !important
+
+.fancybox-prev span 
+  left 1rem !important
+  &::before
+    content '\f101'
+
+.fancybox-next span 
+  right 1rem !important
+  &::before
+    content '\f102'
+
+.fancybox-overlay
+  background rgba(black, .95) !important
+
+.fancybox-title-float-wrap .child
+  background none !important
+  text-shadow none !important

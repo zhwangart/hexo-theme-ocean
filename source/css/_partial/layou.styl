@@ -1,0 +1,61 @@
+// Layout
+
+//.content, .sidebar
+//  padding 1.5rem
+
+.content, .sidebar
+  transition(transition-base)
+
+.content
+  position relative
+  z-index 1
+  margin-right 0
+  &.on
+    transform translateX(- aside-width)
+
+.sidebar
+  position fixed
+  z-index 9
+  top 0
+  right - aside-width
+  bottom 0
+  width aside-width
+  background-color froth-light
+  &.on
+    right 0
+
+.navbar-toggle
+  position absolute
+  top gutter-width
+  right: gutter-width + aside-width
+  padding .5rem 1rem
+  border none
+  border-radius(.4rem)
+  background-color rgba(sea, .25)
+  color white
+  &::before
+    content '\f105'
+    font-family feathericon
+    font-size larger
+
+.wrap, .outer
+  width 100%
+  padding-right gutter-width
+  padding-left gutter-width
+  margin auto
+  clearfix()
+
+
+@media (min-width: 768.02px)
+  .content
+    margin-right aside-width
+  .sidebar
+    right 0
+    background-color white
+  .navbar-toggle
+    display none
+  .wrap, .outer
+    width wrap-width
+    padding-right 0
+    padding-left 0
+

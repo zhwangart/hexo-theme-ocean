@@ -1,0 +1,56 @@
+<% if (config.disqus_shortname){ %>
+    <script>
+        var disqus_shortname = '<%= config.disqus_shortname %>';
+        <% if (page.permalink){ %>
+        var disqus_url = '<%= page.permalink %>';
+        <% } %>
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+<% } %>
+
+<%- js('/js/jquery-2.0.3.min.js') %>
+<%- js('/js/lazyload.min.js') %>
+
+<% if (theme.fancybox){ %>
+    <%- css('fancybox/jquery.fancybox') %>
+    <%- js('fancybox/jquery.fancybox.pack') %>
+<% } %>
+
+<%- js('js/search') %>
+<%- js('js/script') %>
+<script>
+    // 移动设备侦测
+    var isMobile = {
+        Android: function () {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function () {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function () {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function () {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function () {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function () {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
+    // 建议在移动端不初始化，其实 /search.xml 文件还挺大的，
+    if ($('.local-search').size() && !isMobile.any()) {
+        $.getScript('/js/search.js', function() {
+            searchFunc("/search.xml", 'local-search-input', 'local-search-result');
+        });
+    }
+</script>
+<%- partial('gauges-analytics') %>

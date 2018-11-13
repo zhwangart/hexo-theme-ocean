@@ -1,0 +1,38 @@
+.article-albums
+  position relative
+
+.article-albums-photos
+  position relative
+  display flex
+  flex-wrap wrap
+  list-unstyled()
+  clearfix()
+  &::after
+    content: ''
+    flex-grow 999999999
+  .article-albums-item
+    position relative
+    flex-grow 1
+    margin .5rem
+    overflow hidden
+    img
+      object-fit cover
+      max-width 100%
+      min-width 100%
+      height 20rem
+      vertical-align: center
+    .article-albums-caption
+      position absolute
+      bottom 0
+      left 0
+      width 100%
+      background-color rgba(black, .5)
+      color white
+      padding 1rem
+      opacity 0
+      transform translateY(100%)
+      transition(transition-base)
+    &:hover
+      .article-albums-caption
+        opacity 1
+        transform translateY(0)

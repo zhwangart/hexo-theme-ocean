@@ -1,0 +1,12 @@
+<footer class="footer">
+    <% if (theme.sidebar === 'bottom'){ %>
+        <%- partial('_partial/sidebar') %>
+    <% } %>
+    <div class="outer">
+        <ul class="list-inline">
+            <li>&copy; <%= date(new Date(), 'YYYY') %> <%= config.title %></li>
+            <li><%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+            <li><%= __('Theme ') %> <a href="/"><%= config.author %></a></li>
+        </ul>
+    </div>
+</footer>

@@ -1,0 +1,196 @@
+
+.article
+  padding 3rem 0
+
+.article-inner
+  overflow hidden
+
+.article-meta
+  clearfix()
+
+.article-date
+  @extend $block-caption
+  float left
+
+.article-category
+  float left
+  margin-left 1.5rem
+
+.article-category-link
+  @extend $block-caption
+
+.article-entry
+  margin-top 3rem
+  clearfix()
+  @extend $base-style
+  color body-color
+  .pullquote
+    text-align left
+    width 45%
+    margin 0
+    &.left
+      margin-left 0.5em
+      margin-right 1em
+    &.right
+      margin-right 0.5em
+      margin-left 1em
+  .caption
+    color color-grey
+    display block
+    font-size 0.9em
+    margin-top 0.5em
+    position relative
+    text-align center
+  // http://webdesignerwall.com/tutorials/css-elastic-videos
+  .video-container
+    position relative
+    padding-top (9 / 16 * 100)% // 16:9 ratio
+    height 0
+    overflow hidden
+    iframe, object, embed
+      position absolute
+      top 0
+      left 0
+      width 100%
+      height 100%
+      margin-top 0
+
+.article-header
+  h1, h2
+    margin 0
+  .article-title
+    text-decoration none
+    color sea
+
+
+.article-footer
+  clearfix()
+  margin-top 3rem
+
+// Tags
+.article-tag-list
+  list-unstyled()
+  margin 0
+  &:before
+    content "\f153"
+    font-family feathericon
+    margin-right .5rem
+  .article-tag-list-item
+    display inline-block
+    padding-right 1rem
+
+
+.article-comment-link
+  float right
+  &:before
+    content "\f1d2"
+    font-family feathericon
+    padding-right 8px
+
+.article-share-link
+  cursor pointer
+  float right
+  margin-left 20px
+  &:before
+    content "\f14f"
+    font-family feathericon
+    padding-right 6px
+
+// Nav  Older & Newer
+.article-nav
+  clearfix()
+  position relative
+  padding-top 3rem
+  margin-top 5rem
+  border-top border-width border-color solid
+.article-nav-link
+  display block
+  text-decoration none
+  &:first-child
+    float left
+  &:last-child
+    float right
+    text-align right
+.article-nav-caption
+  color sea-lighter
+.article-nav-title
+  font-size inherit
+
+ // Share
+.article-share-box
+  position absolute
+  display none
+  background white
+  border-radius(.4rem)
+  box-shadow 1px 2px 10px rgba(0, 0, 0, 0.2)
+  border-radius 3px
+  margin-left -145px
+  overflow hidden
+  z-index 1
+  &.on
+    display block
+
+.article-share-input
+  width 100%
+  background none
+  box-sizing border-box
+  padding 0 1.5rem
+  outline none
+  border none
+  border-bottom border-width border-color solid
+  height 3.6rem
+  line-height 3.6rem
+
+.article-share-links
+  clearfix()
+
+$article-share-link
+  position relative
+  display block
+  float left
+  width 5rem
+  height 3.6rem
+  color sea-dark
+  text-align center
+  text-decoration none
+  &:before
+    font-size 20px
+    font-family feathericon
+    absolute-center(font-size-base)
+  &:hover
+    color white
+
+.article-share-twitter
+  @extend $article-share-link
+  &:before
+    content "\f1dd"
+  &:hover
+    background twitter-color
+    text-shadow 0 1px darken(color-twitter, 20%)
+
+.article-share-facebook
+  @extend $article-share-link
+  &:before
+    content "\f1d4"
+  &:hover
+    background facebook-color
+    text-shadow 0 1px darken(color-facebook, 20%)
+
+.article-share-pinterest
+  @extend $article-share-link
+  &:before
+    content "\f1db"
+  &:hover
+    background pinterest-color
+    text-shadow 0 1px darken(color-pinterest, 20%)
+
+.article-share-google
+  @extend $article-share-link
+  &:before
+    content "\f1d8"
+  &:hover
+    background google-color
+    text-shadow 0 1px darken(color-google, 20%)
+
+@import "gallery.styl"
+@import "albums.styl"
