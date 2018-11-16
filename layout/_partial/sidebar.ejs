@@ -3,7 +3,7 @@
 
 <nav class="navbar">
     <div class="logo">
-        <a href="<%- url_for() %>"><img src="/images/chick.svg" alt="<%= config.title %>"></a>
+        <a href="<%- url_for() %>"><img src="/images/shark.svg" alt="<%= config.title %>"></a>
     </div>
     <ul class="nav nav-main">
         <% for (var i in theme.menu){ %>
@@ -11,12 +11,12 @@
             <a class="nav-item-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
         </li>
         <% } %>
-            <li class="nav-item">
-                <a class="nav-item-link nav-item-search" title="<%= __('search') %>">
-                    <i class="fe fe-search"></i>
-                    搜索
-                </a>
-            </li>
+        <li class="nav-item">
+            <a class="nav-item-link nav-item-search" title="<%= __('search') %>">
+                <i class="fe fe-search"></i>
+                搜索
+            </a>
+        </li>
     </ul>
 </nav>
 
