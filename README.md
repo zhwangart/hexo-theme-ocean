@@ -2,7 +2,9 @@
 
 Ocean 是基于 Landscape 中的功能设计的一个 Hexo 主题
 
-- [Preview](https://zhwangart.github.io)
+- [预览](https://zhwangart.github.io)
+
+![screenshot](screenshots/screenshot.jpg)
 
 ### 安装
 

@@ -10,7 +10,10 @@
 
 .article-date
   @extend $block-caption
-  float left
+  &::before
+    content '\f10f'
+    font-family feathericon
+    opacity .5
 
 .article-category
   float left
@@ -78,6 +81,9 @@
   .article-tag-list-item
     display inline-block
     padding-right 1rem
+  .article-tag-list-link
+    text-decoration none
+
 
 .article-comment-link
   float right
