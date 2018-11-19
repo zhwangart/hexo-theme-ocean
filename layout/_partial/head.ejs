@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <%- partial('google-analytics') %>
     <%
     var title = page.title;
 
@@ -23,22 +22,17 @@
     <title>
         <% if (title){ %><%= title %> |
         <% } %>
-        <%= config.title %></title>
+        <%= config.title %>
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <%- open_graph({
-        twitter_id: theme.twitter,
-        google_plus: theme.google_plus,
-        fb_admins: theme.fb_admins,
-        fb_app_id: theme.fb_app_id
-    }) %>
     <% if (theme.rss){ %>
         <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
     <% } %>
     <% if (theme.favicon){ %>
         <link rel="icon" href="<%- theme.favicon %>">
     <% } %>
-    <% if (config.highlight.enable){ %>
-
-    <% } %>
     <%- css('css/style') %>
+    <% if (theme.fancybox){ %>
+        <%- css('fancybox/jquery.fancybox') %>
+    <% } %>
 </head>

@@ -10,33 +10,17 @@ rss: /atom.xml
 excerpt_link: 阅读全文...
 fancybox: true
 
-# Sidebar
-#sidebar: right
-#widgets:
-#- category
-#- tag
-#- tagcloud
-#- archive
-#- recent_posts
-
-# display widgets at the bottom of index pages (pagination == 2)
-#index_widgets:
-# - category
-# - tagcloud
-# - archive
-
-# widget behavior
-#archive_type: 'monthly'
-#show_count: false
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
 
 # Miscellaneous
-google_analytics:
-gauges_analytics:
 favicon: /favicon.png
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:
 
 
 # Local search
@@ -49,3 +33,9 @@ local_search:
   # show top n results per article, show all results by setting to -1
   top_n_per_article: 1
   unescape: true
+
+
+#valine:
+#  enable: false
+#  appid:  h9Drto5YdVL1gwR6tYLYzwDu-gzGzoHsz
+#  appkey: Gp6S7o0xPmfwqdXWe0DqOlfE
