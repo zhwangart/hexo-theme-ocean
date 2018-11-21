@@ -1,28 +1,27 @@
 # Ocean
 
-Ocean 是基于 Hexo 默认主题 Landscape 中的功能设计出来的，由于我是一个 Designer 而不失 Coder 所以 Ocean 代码可能并不完美！
-非常感谢 [youchen1992](https://github.com/youchen1992) 在 Ocean 制作过程中提供的支持。
+Ocean is a mobile-enabled Hexo theme based on the features in Hexo's default theme landscape. Since I am a Designer and not a Coder, the Ocean code may not be perfect! I am very grateful to [youchen1992](https://github.com/youchen1992) for providing technical support during the Ocean production process.
 
 
 [预览](https://zhwangart.github.io)
 
 ![screenshot](screenshots/screenshot.jpg)
 
-### 安装
+### Install
 
 ``` bash
-$ git clone https://github.com/zhwangart/hexo-theme-ocean.git
+$ git clone https://github.com/zhwangart/hexo-theme-ocean.git themes/ocean
 ```
 
-### 启用
+### Enable
 
-在 `_config.yml` 中设置 `theme` 为 `ocean`.
+Modify `theme` setting in `_config.yml` to `ocean`
 
 ``` yml
 theme: ocean
 ```
 
-### 更新
+### Update
 
 ``` bash
 cd themes/ocean
