@@ -1,12 +1,13 @@
 
 <%- js('/js/jquery-2.0.3.min.js') %>
 <%- js('/js/lazyload.min.js') %>
-<%- js('js/script') %>
 
 <% if (theme.fancybox){ %>
     <%- js('fancybox/jquery.fancybox.pack') %>
 <% } %>
+
 <% if (theme.search){ %>
     <%- js('js/search') %>
 <% } %>
 
+<%- js('js/script') %>

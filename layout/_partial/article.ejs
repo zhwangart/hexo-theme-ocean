@@ -6,10 +6,14 @@
                 <%- partial('post/title', {class_name: 'article-title'}) %>
             </header>
         <% } %>
-        <div class="article-meta">
-            <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-            <%- partial('post/category') %>
-        </div>
+
+        <% if (index || is_post()) { %>
+            <div class="article-meta">
+                <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+                <%- partial('post/category') %>
+            </div>
+        <% } %>
+
         <div class="article-entry" itemprop="articleBody">
             <%- partial('post/albums') %>
             <% if (post.excerpt && index){ %>
@@ -24,9 +28,6 @@
         <footer class="article-footer">
             <a data-url="<%- post.permalink %>" data-id="<%= post._id %>"
                class="article-share-link"><%= __('分享') %></a>
-            <% if (post.comments && config.disqus_shortname){ %>
-                <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
-            <% } %>
             <%- partial('post/tag') %>
         </footer>
     </div>
