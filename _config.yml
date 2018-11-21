@@ -21,7 +21,7 @@ feed:
   content_limit_delim: ' '
 
 # Miscellaneous
-favicon: /favicon.png
+favicon: /favicon.ico
 
 
 # Local search
