@@ -32,6 +32,7 @@ feed:
   content:
   content_limit: 140
   content_limit_delim: ' '
+  order_by: -date
 
 # Local search
 search_text: Search
