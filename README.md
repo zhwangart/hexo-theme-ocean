@@ -30,6 +30,8 @@ git pull
 
 ### Configuration
 
+Menu 的图标是用 CSS 添加的，在 `source/css/_partial/navbar.styl` 中，我使用的是 [feathericon](https://feathericon.com) ,可以根据需要按顺序指定到 Menu ，如需要帮助，请留言！
+
 ``` yml
 # Menu
 menu:
