@@ -1,17 +1,26 @@
 # Menu
 menu:
-  首页: /
-  归档: /archives
-  相册: /gallery
-  关于: /about
+  Home: /
+  Archives: /archives
+  Gallery: /gallery
+  About: /about
 rss: /atom.xml
+
 
 # Miscellaneous
 favicon: /favicon.ico
 brand: /images/hexo.svg
 
+# Ocean Video
+ocean_video_poster: http://source.zhwangart.com/hexo/themes/ocean/video/ocean.png
+ocean_video_src: http://source.zhwangart.com/hexo/themes/ocean/video/ocean.mp4
+ocean_video_brand: /images/hexo-inverted.svg
+
 # Content
-excerpt_link: 阅读全文...
+excerpt_link: Read More...
+nav_prev_text: Newer posts
+nav_next_text: Olde posts
+share_text: Share
 fancybox: true
 
 # RSS
@@ -25,6 +34,7 @@ feed:
   content_limit_delim: ' '
 
 # Local search
+search_text: Search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
   enable: true

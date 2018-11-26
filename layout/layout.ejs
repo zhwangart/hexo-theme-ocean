@@ -1,12 +1,12 @@
 <%- partial('_partial/head') %>
 <body>
-    <main class="content">
-        <%- body %>
-        <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-    </main>
-    <aside class="sidebar">
-        <%- partial('_partial/sidebar') %>
-    </aside>
-    <%- partial('_partial/after-footer') %>
+<main class="content">
+  <%- body %>
+  <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+</main>
+<aside class="sidebar">
+  <%- partial('_partial/sidebar') %>
+</aside>
+<%- partial('_partial/after-footer') %>
 </body>
 </html>

@@ -1,21 +1,22 @@
 <section class="jumbotron">
-    <div class="video">
-        <div class="video-frame">
-            <img src="http://source.zhwangart.com/hexo/themes/ocean/video/overlay-hero.png" alt="Decorative image frame">
-        </div>
-        <div class="video-media">
-            <video playsinline="" autoplay="" loop="" muted="" data-autoplay="" poster="http://source.zhwangart.com/hexo/themes/ocean/video/ocean.png">
-                <source src="http://source.zhwangart.com/hexo/themes/ocean/video/ocean.mp4" type="video/mp4">
-            </video>
-            <div class="video-overlay"></div>
-        </div>
-        <div class="video-inner text-center text-white">
-            <h1><a href="<%- url_for() %>"><%= config.title %></a></h1>
-            <p><%= config.subtitle %></p>
-            <div><img src="/images/hexo-inverted.svg" class="brand" alt="<%= config.title %>"></div>
-        </div>
-        <div class="video-learn-more">
-            <a class="anchor" href="#landingpage"><i class="fe fe-mouse"></i></a>
-        </div>
+  <div class="video">
+    <div class="video-frame">
+      <img src="http://source.zhwangart.com/hexo/themes/ocean/video/overlay-hero.png" alt="Decorative image frame">
     </div>
+    <div class="video-media">
+      <video playsinline="" autoplay="" loop="" muted="" data-autoplay=""
+             poster="<%- theme.ocean_video_poster %>">
+        <source src="<%- theme.ocean_video_src %>" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+    <div class="video-inner text-center text-white">
+      <h1><a href="<%- url_for() %>"><%= config.title %></a></h1>
+      <p><%= config.subtitle %></p>
+      <div><img src="<%- theme.ocean_video_brand %>" class="brand" alt="<%= config.title %>"></div>
+    </div>
+    <div class="video-learn-more">
+      <a class="anchor" href="#landingpage"><i class="fe fe-mouse"></i></a>
+    </div>
+  </div>
 </section>

@@ -40,6 +40,30 @@ rss: /atom.xml
 # Miscellaneous
 favicon: /favicon.ico
 brand: /images/shark.svg
+
+# Ocean Video
+ocean_video_poster: video poster path      # Optional,Used for display before video loading
+ocean_video_src: video src path      # Video format MP4
+ocean_video_brand: /images/hexo-inverted.svg      # Optional
+
+# Content
+excerpt_link: Read More...
+nav_prev_text: Newer posts
+nav_next_text: Olde posts
+share_text: Share
+fancybox: true
+
+# Local search
+search_text: Search
+```
+
+### Poster
+
+``` md
+photos: [
+        ["img_url"],
+        ["img_url"]
+        ] 
 ```
 
 ### Gallery
