@@ -57,9 +57,11 @@ fancybox: true
 search_text: Search
 ```
 
-### Poster
+### Post poster
 
 ``` md
+title: Gallery
+
 photos: [
         ["img_url"],
         ["img_url"]
