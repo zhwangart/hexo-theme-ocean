@@ -60,7 +60,7 @@ search_text: Search
 ### Post poster
 
 ``` md
-title: Gallery
+title: Post name
 
 photos: [
         ["img_url"],
