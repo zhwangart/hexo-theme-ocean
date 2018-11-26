@@ -1,15 +1,16 @@
-
 <button class="navbar-toggle"></button>
 
 <nav class="navbar">
-    <div class="logo">
-        <a href="<%- url_for() %>"><img src="/images/hexo.svg" alt="<%= config.title %>"></a>
-    </div>
+    <% if (theme.brand){ %>
+        <div class="logo">
+            <a href="<%- url_for() %>"><img src="<%- theme.brand %>" alt="<%= config.title %>"></a>
+        </div>
+    <% } %>
     <ul class="nav nav-main">
         <% for (var i in theme.menu){ %>
-        <li class="nav-item">
-            <a class="nav-item-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
-        </li>
+            <li class="nav-item">
+                <a class="nav-item-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+            </li>
         <% } %>
         <li class="nav-item">
             <a class="nav-item-link nav-item-search" title="<%= __('search') %>">
@@ -24,7 +25,7 @@
     <ul class="nav">
         <li class="nav-item">
             <% if (theme.rss){ %>
-                <a class="nav-item-link" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>">
+                <a class="nav-item-link" target="_blank" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>">
                     <i class="fe fe-feed"></i>
                 </a>
             <% } %>

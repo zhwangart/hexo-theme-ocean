@@ -23,6 +23,11 @@
     <% } else if (config.keywords){ %>
         <meta name="keywords" content="<%= config.keywords %>">
     <%} %>
+    <% if (page.description){ %>
+        <meta name="description" content="<%= page.description %>">
+    <% } else if (config.description){ %>
+        <meta name="description" content="<%= config.description %>">
+    <%} %>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
     <% if (theme.favicon){ %>
@@ -32,4 +37,5 @@
     <% if (theme.fancybox){ %>
         <%- css('fancybox/jquery.fancybox') %>
     <% } %>
+    <%- js('/js/pace.min.js') %>
 </head>

@@ -19,7 +19,7 @@
             <% if (post.excerpt && index){ %>
                 <%- post.excerpt %>
                 <% if (theme.excerpt_link){ %>
-                    <a class="article-more-link" href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+                    <a class="article-more-link" href="<%- url_for(post.path) %>"><%= theme.excerpt_link %></a>
                 <% } %>
             <% } else { %>
                 <%- post.content %>

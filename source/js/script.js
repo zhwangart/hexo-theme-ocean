@@ -170,4 +170,5 @@
         $content.removeClass('on');
         $sidebar.removeClass('on');
     });
+
 })(jQuery);

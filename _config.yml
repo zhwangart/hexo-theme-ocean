@@ -6,6 +6,10 @@ menu:
   关于: /about
 rss: /atom.xml
 
+# Miscellaneous
+favicon: /favicon.ico
+brand: /images/hexo.svg
+
 # Content
 excerpt_link: 阅读全文...
 fancybox: true
@@ -20,10 +24,6 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
 
-# Miscellaneous
-favicon: /favicon.ico
-
-
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
@@ -34,9 +34,3 @@ local_search:
   # show top n results per article, show all results by setting to -1
   top_n_per_article: 1
   unescape: true
-
-
-#valine:
-#  enable: false
-#  appid:  h9Drto5YdVL1gwR6tYLYzwDu-gzGzoHsz
-#  appkey: Gp6S7o0xPmfwqdXWe0DqOlfE

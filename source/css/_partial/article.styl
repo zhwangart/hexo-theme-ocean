@@ -16,7 +16,7 @@
     opacity .5
 
 .article-category
-  float left
+  display inline-block
   margin-left 1.5rem
 
 .article-category-link
@@ -171,7 +171,7 @@ $article-share-link
     content "\f1dd"
   &:hover
     background twitter-color
-    text-shadow 0 1px darken(color-twitter, 20%)
+    text-shadow 0 1px darken(twitter-color, 20%)
 
 .article-share-facebook
   @extend $article-share-link
@@ -179,7 +179,7 @@ $article-share-link
     content "\f1d4"
   &:hover
     background facebook-color
-    text-shadow 0 1px darken(color-facebook, 20%)
+    text-shadow 0 1px darken(facebook-color, 20%)
 
 .article-share-pinterest
   @extend $article-share-link
@@ -187,7 +187,7 @@ $article-share-link
     content "\f1db"
   &:hover
     background pinterest-color
-    text-shadow 0 1px darken(color-pinterest, 20%)
+    text-shadow 0 1px darken(pinterest-color, 20%)
 
 .article-share-google
   @extend $article-share-link
@@ -195,7 +195,7 @@ $article-share-link
     content "\f1d8"
   &:hover
     background google-color
-    text-shadow 0 1px darken(color-google, 20%)
+    text-shadow 0 1px darken(google-color, 20%)
 
 @import "gallery.styl"
 @import "albums.styl"
