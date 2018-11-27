@@ -57,8 +57,7 @@ fancybox: true
 search_text: Search
 ```
 
-Menu 中的图标 [feathericon](https://feathericon.com) 是按照顺序写在 CSS `source/css/_partial/navbar.styl` 里面的，可以根据自己的需要更改或者新增！
-
+The [feathericon](https://feathericon.com) in the menu is programmed ordely in "CSS `source/css/_partial/navbar.styl` " and can be changed or added if needed.
 
 ``` css
 .navbar
