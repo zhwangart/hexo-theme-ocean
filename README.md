@@ -53,6 +53,8 @@ excerpt_link: Read More...
 nav_prev_text: Newer posts
 nav_next_text: Olde posts
 share_text: Share
+
+# fancybox
 fancybox: true
 
 # Local search
