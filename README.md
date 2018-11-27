@@ -60,44 +60,23 @@ search_text: Search
 The [feathericon](https://feathericon.com) in the menu is programmed ordely in "CSS `source/css/_partial/navbar.styl` " and can be changed or added if needed.
 
 ``` css
-.navbar
-  position relative
-  padding-top 3rem
-  text-align center
-  .nav
-    list-unstyled()
+.nav-item
+  &:nth-child(1)         // home
     .nav-item-link
-      display block
-      padding 1rem;
-      color sea-dark
-      text-decoration none
-      cursor pointer
-      &:hover
-        color link-hover-color
-    &.nav-main
-      .nav-item-link
-        &::before, i.fe
-          display block
-          line-height 1
-        &::before
-          font-family 'feathericon'
-      .nav-item
-        &:nth-child(1)         // home
-          .nav-item-link
-            &::before
-              content '\f12f'
-        &:nth-child(2)         // archives
-          .nav-item-link
-            &::before
-              content '\f12a'
-        //&:nth-child(3)         // gallery
-        //  .nav-item-link
-        //    &::before
-        //      content '\f1a9'
-        //&:nth-child(4)         // about
-        //  .nav-item-link
-        //    &::before
-        //      content '\f174'
+      &::before
+        content '\f12f'
+  &:nth-child(2)         // archives
+    .nav-item-link
+      &::before
+        content '\f12a'
+  //&:nth-child(3)         // gallery
+  //  .nav-item-link
+  //    &::before
+  //      content '\f1a9'
+  //&:nth-child(4)         // about
+  //  .nav-item-link
+  //    &::before
+  //      content '\f174'
 ```
 
 ### Post poster
