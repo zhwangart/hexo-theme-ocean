@@ -30,6 +30,8 @@ git pull
 
 ### Configuration
 
+let me know if you can’t find something.
+
 ``` yml
 # Menu
 menu:
