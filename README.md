@@ -44,8 +44,9 @@ favicon: /favicon.ico
 brand: /images/shark.svg
 
 # Ocean Video
+# Because I put videos in multiple formats on the same path, I just labeled the path here.
 ocean_video_poster: video poster path      # Optional,Used for display before video loading
-ocean_video_src: video src path      # Video format MP4
+ocean_video_src: video src path      # Video format mp4/ogg/webm
 ocean_video_brand: /images/hexo-inverted.svg      # Optional
 
 # Content

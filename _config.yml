@@ -12,8 +12,9 @@ favicon: /favicon.ico
 brand: /images/hexo.svg
 
 # Ocean Video
-ocean_video_poster: http://source.zhwangart.com/hexo/themes/ocean/video/ocean.png
-ocean_video_src: http://source.zhwangart.com/hexo/themes/ocean/video/ocean.mp4
+# Because I put videos in multiple formats on the same path, I just labeled the path here.
+ocean_video_poster: http://source.zhwangart.com/hexo/themes/ocean/video/
+ocean_video_src: http://source.zhwangart.com/hexo/themes/ocean/video/
 ocean_video_brand: /images/hexo-inverted.svg
 
 # Content
