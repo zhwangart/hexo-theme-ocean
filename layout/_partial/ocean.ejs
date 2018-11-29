@@ -4,9 +4,12 @@
       <img src="http://source.zhwangart.com/hexo/themes/ocean/video/overlay-hero.png" alt="Decorative image frame">
     </div>
     <div class="video-media">
-      <video playsinline="" autoplay="" loop="" muted="" data-autoplay=""
-             poster="<%- theme.ocean_video_poster %>">
-        <source src="<%- theme.ocean_video_src %>" type="video/mp4">
+      <video playsinline="" autoplay="" loop="" muted="" data-autoplay="" 
+             poster="<%- theme.ocean_video_poster %>ocean.png" x5-video-player-type="h5">
+        <source src="<%- theme.ocean_video_src %>ocean.mp4" type="video/mp4">
+        <source src="<%- theme.ocean_video_src %>ocean.ogv" type="video/ogg">
+        <source src="<%- theme.ocean_video_src %>ocean.webm" type="video/webm">
+        <p>Your user agent does not support the HTML5 Video element.</p>
       </video>
       <div class="video-overlay"></div>
     </div>

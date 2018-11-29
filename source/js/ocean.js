@@ -128,7 +128,9 @@
   });
 
   if ($.fancybox) {
-    $('.fancybox').fancybox();
+    $('[data-fancybox]').fancybox({
+      protect: true
+    });
   }
 
   // lazyload
