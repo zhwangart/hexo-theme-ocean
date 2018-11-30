@@ -5,7 +5,9 @@ Ocean is a mobile-enabled Hexo theme based on the features in Hexo's default the
 
 [Preview](https://zhwangart.github.io)
 
-![screenshot](screenshots/screenshot.jpg)
+[中文说明](https://zhwangart.github.io/2018/11/30/Ocean/)
+
+![Screenshot](screenshots/hexo-theme-ocean.jpg)
 
 ### Install
 
@@ -37,6 +39,8 @@ let me know if you can’t find something.
 menu:
   Home: /
   Archives: /archives
+  Gallery: /gallery
+  About: /about
 rss: /atom.xml
 
 # Miscellaneous
