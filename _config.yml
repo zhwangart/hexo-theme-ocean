@@ -48,3 +48,12 @@ local_search:
   # show top n results per article, show all results by setting to -1
   top_n_per_article: 1
   unescape: true
+
+# Gitalk
+gitalk:
+  enable: false # true
+  clientID: # GitHub Application Client ID
+  clientSecret: # Client Secret
+  repo: # Repository name
+  owner: # GitHub ID
+  admin: # GitHub ID

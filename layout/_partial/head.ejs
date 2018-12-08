@@ -37,9 +37,6 @@
     <link rel="shortcut icon" href="<%- theme.favicon %>">
   <% } %>
   <%- css('css/style') %>
-  <% if (theme.rss){ %>
-    <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
-  <% } %>
   <% if (theme.fancybox){ %>
     <%- css('fancybox/jquery.fancybox.min') %>
   <% } %>

@@ -30,6 +30,7 @@
       $searchWrap.removeClass('on');
     }
   });
+
   // 移动设备侦测
   var isMobile = {
     Android: function () {
@@ -110,23 +111,7 @@
     window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
   });
 
-  // Caption ------------
-  $('.article-entry').each(function (i) {
-    $(this).find('img').each(function () {
-      if ($(this).parent().hasClass('fancybox')) return;
-
-      var alt = this.alt;
-
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
-    });
-
-    $(this).find('.fancybox').each(function () {
-      $(this).attr('rel', 'article' + i);
-    });
-  });
-
+  // fancybox
   if ($.fancybox) {
     $('[data-fancybox]').fancybox({
       protect: true

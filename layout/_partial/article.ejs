@@ -1,5 +1,4 @@
-<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope
-         itemprop="blogPost">
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
 
   <div class="article-inner">
     <% if (post.link || post.title){ %>
@@ -32,11 +31,16 @@
          class="article-share-link"><%- theme.share_text %></a>
       <%- partial('post/tag') %>
     </footer>
+
   </div>
 
   <% if (!index){ %>
     <%- partial('post/nav') %>
   <% } %>
+
+  <% if (is_post()) { %>
+    <%- partial('post/gitalk') %>
+  <%} %>
 
 </article>
 

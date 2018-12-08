@@ -64,6 +64,15 @@ fancybox: true
 
 # Local search
 search_text: Search
+
+# Gitalk
+gitalk:
+  enable: false # true
+  clientID: # GitHub Application Client ID
+  clientSecret: # Client Secret
+  repo: # Repository name
+  owner: GitHub ID
+  admin: GitHub ID
 ```
 
 The [feathericon](https://feathericon.com) in the menu is programmed ordely in "CSS `source/css/_partial/navbar.styl` " and can be changed or added if needed.
