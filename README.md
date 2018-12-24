@@ -45,7 +45,7 @@ rss: /atom.xml
 
 # Miscellaneous
 favicon: /favicon.ico
-brand: /images/shark.svg
+brand: /images/hexo.svg
 
 # Ocean Video
 # Because I put videos in multiple formats on the same path, I just labeled the path here.
