@@ -13,10 +13,10 @@ brand: /images/hexo.svg
 
 # Ocean Video
 # Because I put videos in multiple formats on the same path, I just labeled the path here.
-ocean_video_poster: /images/ocean/
-ocean_video_src: /images/ocean/
-ocean_overlay_hero: /images/ocean/
-ocean_video_brand: /images/hexo-inverted.svg
+ocean:
+  overlay: true
+  path: /images/ocean/
+  brand: /images/hexo-inverted.svg
 
 # Content
 excerpt_link: Read More...

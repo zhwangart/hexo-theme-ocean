@@ -49,9 +49,10 @@ brand: /images/hexo.svg
 
 # Ocean Video
 # Because I put videos in multiple formats on the same path, I just labeled the path here.
-ocean_video_poster: video poster path      # Optional,Used for display before video loading
-ocean_video_src: video src path      # Video format mp4/ogg/webm
-ocean_video_brand: /images/hexo-inverted.svg      # Optional
+ocean:
+  overlay: true      # Overlay that can be closed
+  path: images/ocean/      # Video storage path, formats: mp4/ogg/webm
+  brand: /images/hexo-inverted.svg      # Optional, a small logo
 
 # Content
 excerpt_link: Read More...
