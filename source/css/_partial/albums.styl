@@ -21,11 +21,23 @@
       min-width 100%
       vertical-align: center
     .article-albums-caption
+      display block
+      width 100%
+      padding 1rem 0
+      text-align center
+
+// Media Query
+@media (min-width: 576px)
+  .article-albums-item
+    img
+      height 30rem
+    .article-albums-caption
       position absolute
       bottom 0
       left 0
       width 100%
       background-color rgba(black, .5)
+      background linear-gradient(to top, rgba(black, .5), transparent)
       color white
       padding 1rem
       opacity 0
@@ -35,3 +47,8 @@
       .article-albums-caption
         opacity 1
         transform translateY(0)
+
+@media (min-width: 768px)
+  .article-albums-item
+    img
+      height 20rem
