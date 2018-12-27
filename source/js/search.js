@@ -38,8 +38,8 @@ var searchFunc = function (path, search_id, content_id) {
       var $resultContent = document.getElementById(content_id);
 
       $input.addEventListener('input', function () {
-        var str = '<ul class=\"search-result-list\">';
-        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+        var str = '<ul class="search-result-list">';
+        var keywords = this.value.trim().toLowerCase().split(/[\s]+/);
         $resultContent.innerHTML = "";
         if (this.value.trim().length <= 0) {
           return;
@@ -47,7 +47,7 @@ var searchFunc = function (path, search_id, content_id) {
         // perform local searching
         datas.forEach(function (data) {
           var isMatch = true;
-          var content_index = [];
+          // var content_index = [];
           if (!data.title || data.title.trim() === '') {
             data.title = "Untitled";
           }
@@ -124,4 +124,4 @@ var searchFunc = function (path, search_id, content_id) {
     $('#local-search-input').val('');
     $('#local-search-result').html('');
   });
-}
+};
