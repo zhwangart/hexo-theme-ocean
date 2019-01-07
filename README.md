@@ -98,6 +98,26 @@ The [feathericon](https://feathericon.com) in the menu is programmed ordely in "
   //      content '\f174'
 ```
 
+### Plugins
+
++ **Local search** - Generate an xml index file using the plugin [hexo-generator-search](https://github.com/hexojs/hexo-theme-landscape).
+  ```yml
+  $ npm install hexo-generator-searchdb --save
+  ```
+  Then add the plugin configuration for hexo's configuration file `_config.yml` (note: not the theme's configuration file, the theme configuration file Ocean has been configured):
+  ```yml
+  # Hexo-generator-search
+  search:
+    path: search.xml
+    field: post
+    format: html
+  ```
+    
++ **RSS** - RSS - If you would like to enable the RSS, the hexo-generate-feed plugin is also required.
+  ```yml
+  $ npm install hexo-generator-feed --save
+  ```
+
 ### Post poster
 
 ``` md
