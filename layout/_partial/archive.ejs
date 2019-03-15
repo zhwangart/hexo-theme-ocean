@@ -40,7 +40,10 @@
   <% } %>
   <% if (page.total > 1){ %>
     <nav class="page-nav">
-      <% var prev_text = theme.nav_prev_text ;var next_text = theme.nav_next_text %>
+      <%
+        var prev_text = theme.nav_text.page_prev;
+        var next_text = theme.nav_text.page_next
+      %>
       <%- paginator({
         prev_text: prev_text,
         next_text: next_text

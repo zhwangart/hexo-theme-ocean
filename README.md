@@ -50,15 +50,18 @@ brand: /images/hexo.svg
 # Ocean Video
 # Because I put videos in multiple formats on the same path, I just labeled the path here.
 ocean:
-  overlay: true      # Overlay that can be closed
+  overlay: true
   path: images/ocean/      # Video storage path, formats: mp4/ogg/webm
   brand: /images/hexo-inverted.svg      # Optional, a small logo
 
 # Content
 excerpt_link: Read More...
-nav_prev_text: Newer posts
-nav_next_text: Olde posts
 share_text: Share
+nav_text:
+  page_prev: Prev page
+  page_next: Next page
+  post_prev: Newer posts
+  post_next: Olde posts
 
 # fancybox
 fancybox: true
@@ -68,12 +71,12 @@ search_text: Search
 
 # Gitalk
 gitalk:
-  enable: false # true
-  clientID:      # GitHub Application Client ID
-  clientSecret:      # Client Secret
-  repo:      # Repository name
-  owner:      # GitHub ID
-  admin:      # GitHub ID
+  enable: true
+  clientID: # GitHub Application Client ID
+  clientSecret: # Client Secret
+  repo: # Repository name
+  owner: GitHub ID
+  admin: GitHub ID
 ```
 
 The [feathericon](https://feathericon.com) in the menu is programmed ordely in "CSS `source/css/_partial/navbar.styl` " and can be changed or added if needed.
@@ -112,7 +115,7 @@ The [feathericon](https://feathericon.com) in the menu is programmed ordely in "
     field: post
     format: html
   ```
-    
+
 + **RSS** - RSS - If you would like to enable the RSS, the hexo-generate-feed plugin is also required.
   ```yml
   $ npm install hexo-generator-feed --save
@@ -126,7 +129,7 @@ title: Post name
 photos: [
         ["img_url"],
         ["img_url"]
-        ] 
+        ]
 ```
 
 ### Gallery
@@ -141,4 +144,3 @@ albums: [
         ]
 ---
 ```
-

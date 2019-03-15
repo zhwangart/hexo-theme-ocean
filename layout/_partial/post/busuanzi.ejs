@@ -1,0 +1,9 @@
+<ul class="list-inline">
+  <% if (is_home()) { %>
+    <li><i class="fe fe-bar-chart"></i> <span id="busuanzi_value_site_pv"></span></li>
+  <%} %>
+    <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  <% if (is_post()) { %>
+    <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  <%} %>
+</ul>

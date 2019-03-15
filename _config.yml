@@ -20,9 +20,12 @@ ocean:
 
 # Content
 excerpt_link: Read More...
-nav_prev_text: Newer posts
-nav_next_text: Olde posts
 share_text: Share
+nav_text:
+  page_prev: Prev page
+  page_next: Next page
+  post_prev: Newer posts
+  post_next: Olde posts
 
 # fancybox
 fancybox: true

@@ -121,6 +121,7 @@
   // lazyload
   $(".lazy").lazyload();
 
+  //
   $(document).ready(function ($) {
     $(".anchor").click(function (event) {
       event.preventDefault();
