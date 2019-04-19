@@ -23,6 +23,9 @@
 
 <nav class="navbar navbar-bottom">
   <ul class="nav">
+      <li class="nav-item">
+          <%- partial('totop') %>
+      </li>
     <li class="nav-item">
       <% if (theme.rss){ %>
         <a class="nav-item-link" target="_blank" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>">
