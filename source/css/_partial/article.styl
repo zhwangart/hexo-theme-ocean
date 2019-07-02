@@ -18,9 +18,16 @@
 .article-category
   display inline-block
   margin-left 1.5rem
+  &:before
+    content "\f18c"
+    font-family feathericon
+    margin-right .5rem
+  .article-category-link
+    @extend $block-caption
 
-.article-category-link
-  @extend $block-caption
+.archive-article-header
+  + .article-category
+    margin-left 0
 
 .article-entry
   margin-top 3rem
