@@ -7,6 +7,7 @@
     <h2 itemprop="name">
       <a class="<%= class_name %>" href="<%- url_for(post.path) %>"><%= post.title %></a>
     </h2>
+    <%- partial('topping') %>
   <% } else { %>
     <h1 class="<%= class_name %>" itemprop="name">
       <%= post.title %>
