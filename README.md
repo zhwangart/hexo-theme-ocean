@@ -124,23 +124,44 @@ The [feathericon](https://feathericon.com) in the menu is programmed ordely in "
 ### Post poster
 
 ``` md
+---
 title: Post name
-
 photos: [
         ["img_url"],
         ["img_url"]
         ]
+---        
 ```
 
 ### Gallery
 Need to write in the head of the markdown, this is not a good way to write, I hope to get a better way to write on github.
 
 ``` md
+---
 title: Gallery
-
 albums: [
         ["img_url","img_caption"],
         ["img_url","img_caption"]
         ]
+---
+```
+
+### Post top
+
+Install plugin [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)：
+
+``` yml
+$ npm uninstall hexo-generator-index --save
+$ npm install hexo-generator-index-pin-top --save
+```
+
+Add `top: ture` to the Front-matter area of the post that needs to be pinned, example:
+
+``` md
+---
+title: Ocean
+author: zhwangart
+date: 2019-07-18 15:45:03
+top: ture
 ---
 ```
