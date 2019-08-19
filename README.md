@@ -189,12 +189,3 @@ Use Tocbot to parse the title tags (h1~h6) in the content and insert the directo
   toc: false
   ---
 	```
-
-### 文章置顶
-
-安装插件 [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)：
-
-``` yml
-$ npm uninstall hexo-generator-index --save
-$ npm install hexo-generator-index-pin-top --save
-```
