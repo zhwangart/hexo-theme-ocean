@@ -4,9 +4,13 @@
   <%- body %>
   <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
 </main>
-<aside class="sidebar">
-  <%- partial('_partial/sidebar') %>
-</aside>
-<%- partial('_partial/after-footer') %>
+<% if (theme.toc && is_post()){ %>
+<aside class="sidebar sidebar-specter">
+  <% } else { %>
+  <aside class="sidebar">
+    <% } %>
+    <%- partial('_partial/sidebar') %>
+  </aside>
+  <%- partial('_partial/after-footer') %>
 </body>
 </html>

@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /home/
+Allow: /archives/
+Allow: /gallery/
+Allow: /about/
+Disallow: /images/
+Disallow: /css/
+Disallow: /js/
+Disallow: /fancybox/
+Sitemap: https://zhwangart.github.io/sitemap.xml
+Sitemap: https://zhwangart.github.io/baidusitemap.xml
