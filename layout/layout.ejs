@@ -2,15 +2,11 @@
 <body>
 <main class="content">
   <%- body %>
-  <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+  <%- partial('_partial/footer') %>
 </main>
-<% if (theme.toc && is_post()){ %>
-<aside class="sidebar sidebar-specter">
-  <% } else { %>
-  <aside class="sidebar">
-    <% } %>
-    <%- partial('_partial/sidebar') %>
-  </aside>
-  <%- partial('_partial/after-footer') %>
+<aside class="sidebar">
+  <%- partial('_partial/sidebar',null, {cache: !config.relative_link}) %>
+</aside>
+<%- partial('_partial/after-footer') %>
 </body>
 </html>

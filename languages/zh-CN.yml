@@ -1,4 +1,4 @@
-categories: 分类
+categories: 类别
 search: 搜索
 tags: 标签
 tagcloud: 标签云
@@ -10,10 +10,10 @@ archive_a: 归档
 archive_b: 归档：%s
 page: 第 %d 页
 recent_posts: 最新文章
-newer: Newer
-older: Older
+newer: 前一篇
+older: 后一篇
 share: 分享
 powered_by: Powered by
 rss_feed: RSS Feed
-category: Category
+category: 分类
 tag: Tag

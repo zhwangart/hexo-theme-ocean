@@ -20,13 +20,6 @@ ocean:
 
 # Content
 excerpt_link: Read More...
-share_text: Share
-search_text: Search
-nav_text:
-  page_prev: Prev page
-  page_next: Next page
-  post_prev: Newer posts
-  post_next: Olde posts
 
 # Tags
 show_count: false

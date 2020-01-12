@@ -1,4 +1,4 @@
-<%- partial('_partial/ocean') %>
+<%- partial('_partial/ocean', null, {cache: !config.relative_link}) %>
 <div id="landingpage">
   <%- partial('_partial/archive', {pagination: 2, index: true}) %>
 </div>
