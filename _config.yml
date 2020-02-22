@@ -38,3 +38,15 @@ gitalk:
   repo: # Repository name
   owner: # GitHub ID
   admin: # GitHub ID
+
+# Valine
+valine:
+  enable: false # true
+  el: 'vcomments'
+  appId: 
+  appKey: 
+  notify: false
+  verify: true
+  avatar: 'mp'
+  pageSize: '10'
+  placeholder: '请输入...' 
