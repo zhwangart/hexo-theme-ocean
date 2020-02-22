@@ -69,8 +69,20 @@ gitalk:
   clientID: # GitHub Application Client ID
   clientSecret: # Client Secret
   repo: # Repository name
-  owner: GitHub ID
-  admin: GitHub ID
+  owner: # GitHub ID
+  admin: # GitHub ID
+
+# Valine
+valine:
+  enable: false
+  el: 'vcomments'
+  appId: 
+  appKey: 
+  notify: false
+  verify: true
+  avatar: 'mp'
+  pageSize: '10'
+  placeholder: '请输入...'  
 ```
 
 The [feathericon](https://feathericon.com) in the menu is programmed ordely in "CSS `source/css/_partial/navbar.styl` " and can be changed or added if needed.
