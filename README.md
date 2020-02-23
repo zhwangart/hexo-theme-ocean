@@ -9,13 +9,13 @@ Ocean is a mobile-enabled Hexo theme based on the features in Hexo's default the
 
 ![Screenshot](screenshots/hexo-theme-ocean.jpg)
 
-### Install
+## Install
 
 ``` bash
 $ git clone https://github.com/zhwangart/hexo-theme-ocean.git themes/ocean
 ```
 
-### Enable
+## Enable
 
 Modify `theme` setting in `_config.yml` to `ocean`
 
@@ -23,14 +23,14 @@ Modify `theme` setting in `_config.yml` to `ocean`
 theme: ocean
 ```
 
-### Update
+## Update
 
 ``` bash
 cd themes/ocean
 git pull
 ```
 
-### Configuration
+## Configuration
 
 let me know if you can’t find something.
 
@@ -74,15 +74,15 @@ gitalk:
 
 # Valine
 valine:
-  enable: false
-  el: 'vcomments'
-  appId: 
-  appKey: 
-  notify: false
-  verify: true
-  avatar: 'mp'
-  pageSize: '10'
-  placeholder: '请输入...'  
+  enable: false    # Default: false.
+  el: 'vcomments'    # The DOM element to be mounted on initialization.
+  appId:    # Application appId from Leancloud.
+  appKey:    # Application appKey from Leancloud.
+  notify: false    # Mail notifier, Default: false.
+  verify: true    # Validation code, Default: true.
+  avatar: 'mp'    # Gravatar type.
+  pageSize: '10'    # Number of pages per page.
+  placeholder: '请输入...'    # Comment box placeholders.
 ```
 
 The [feathericon](https://feathericon.com) in the menu is programmed ordely in "CSS `source/css/_partial/navbar.styl` " and can be changed or added if needed.
@@ -107,7 +107,7 @@ The [feathericon](https://feathericon.com) in the menu is programmed ordely in "
   //      content '\f174'
 ```
 
-### Plugins
+## Plugins
 
 + [hexo-generator-search](https://github.com/hexojs/hexo-theme-landscape) Local search
 	
@@ -151,7 +151,7 @@ The [feathericon](https://feathericon.com) in the menu is programmed ordely in "
   $ npm install hexo-generator-index-pin-top --save
   ```
 
-### Post poster
+## Post poster
 
 ``` md
 ---
@@ -164,7 +164,7 @@ photos: [
 ---
 ```
 
-### Gallery
+## Gallery
 Need to write in the head of the markdown, this is not a good way to write, I hope to get a better way to write on github.
 
 ``` md
@@ -178,7 +178,7 @@ albums: [
 ---
 ```
 
-### Toc
+## Toc
 
 Use Tocbot to parse the title tags (h1~h6) in the content and insert the directory. 
 
