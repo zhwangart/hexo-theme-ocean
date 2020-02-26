@@ -41,6 +41,7 @@ menu:
   Archives: /archives
   Gallery: /gallery
   About: /about
+  Links: /links
 rss: /atom.xml
 
 # Miscellaneous
@@ -105,6 +106,10 @@ The [feathericon](https://feathericon.com) in the menu is programmed ordely in "
   //  .nav-item-link
   //    &::before
   //      content '\f174'
+  //&:nth-child(5)         // links
+  //  .nav-item-link
+  //    &::before
+  //      content '\f136'
 ```
 
 ## Plugins
