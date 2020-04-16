@@ -4,7 +4,6 @@ menu:
   Archives: /archives
   Gallery: /gallery
   About: /about
-  Links: /links
 rss: /atom.xml
 
 
@@ -51,9 +50,3 @@ valine:
   avatar: 'mp'
   pageSize: '10'
   placeholder: '请输入...' 
-
-# Katex Support
-katex:
-  enable: false # true
-  allpost:
-  copy_tex:
