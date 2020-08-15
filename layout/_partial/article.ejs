@@ -31,7 +31,7 @@
                                                                 <% } else { %>
                                                                     <%- post.content %>
                                                                         <% } %>
-                                                                        <% if (config.liker.enable){ %>
+                                                                        <% if (config.liker.enable&&!index){ %>
                                                                             <div>
                                                                                 <script type="text/javascript">
                                                                                   document.write("<iframe scrolling='no' frameborder='0' style='width:100%; max-width:485px; height:240px; margin:auto; overflow:hidden; display:block;'src='https://button.like.co/in/embed/"+'<%- config.liker.id  %>'+"/button?referrer=" +encodeURIComponent(location.href.split("?")[0].split("#")[0]) + "'></iframe>");
