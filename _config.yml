@@ -21,6 +21,12 @@ ocean:
 # Content
 excerpt_link: Read More...
 
+# MIIT ICP/IP/DOMAIN
+beian: 
+  enable: true
+  number: 京ICP备17054916号-2
+  url: https://beian.miit.gov.cn/
+
 # Tags
 show_count: false
 
