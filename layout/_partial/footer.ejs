@@ -4,9 +4,12 @@
       <%- partial('post/busuanzi') %>
     </div>
     <ul class="list-inline">
-      <li>&copy; <%= date(new Date(), 'YYYY') %> <%= config.title %></li>
+      <li><%= config.title %> &copy; <%= date(new Date(), 'YYYY') %></li>
+      <% if (theme.beian){ %>
+        <li><%- theme.beian.number %></li>
+      <% } %>
       <li><%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a></li>
-      <li><%= __('Theme ') %> <a href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+      <li><%= __('theme ') %> <a href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
     </ul>
   </div>
 </footer>
