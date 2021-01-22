@@ -22,7 +22,7 @@ ocean:
 excerpt_link: Read More...
 
 # MIIT ICP/IP/DOMAIN
-beian: 
+beian:
   enable: true
   number: 京ICP备17054916号-2
   url: https://beian.miit.gov.cn/
@@ -35,6 +35,9 @@ toc: true
 
 # fancybox
 fancybox: true
+
+# 是否显示复制按钮
+show_copy_btn: true
 
 # Gitalk
 gitalk:
@@ -49,10 +52,10 @@ gitalk:
 valine:
   enable: false # true
   el: 'vcomments'
-  appId: 
-  appKey: 
+  appId:
+  appKey:
   notify: false
   verify: true
   avatar: 'mp'
   pageSize: '10'
-  placeholder: '请输入...' 
+  placeholder: '请输入...'
