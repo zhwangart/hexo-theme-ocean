@@ -5,6 +5,9 @@
 <% if (theme.fancybox){ %>
 <%- js('fancybox/jquery.fancybox.min') %>
 <% } %>
+<% if (theme.show_copy_btn){ %>
+<%- js('/js/copybtn') %>
+<% } %>
 
 <% if (theme.toc && is_post()){ %>
 <%- js('/js/tocbot.min') %>
