@@ -78,7 +78,7 @@
     return top;
   }
 
-    /**
+  /**
    * 获取按钮的 right 值
    * @param {HTMLElement} highlightEl 
    */
@@ -87,27 +87,10 @@
     return right;
   }
 
-  // 动态添加复制按钮
-  highlights.each(function () {
-    var highlightEl = $(this);
-    var offsetTop = getCopyBtnPosY(highlightEl) + MARGIN;
-    var offsetRight = getCopyBtnPosX(highlightEl) + MARGIN;
-
-    var codeEl = highlightEl.find('.code pre')[0];
-
-    var copyBtnInstance = new GenCopyBtn(offsetTop, offsetRight);
-    var copyBtnEl = copyBtnInstance.getEl();
-    copyBtnEl.addEventListener(
-      'click',
-      copyText.bind(this, codeEl, copyBtnInstance)
-    )
-
-    nodeFragment.appendChild(copyBtnEl);
-  })
-
-  $(mainSelector).append(nodeFragment);
-
-  function autoSetPos() {
+  /**
+   * 窗口调整后 重新设置 按钮位置
+   */
+  function onResize() {
     var copyBtn = $('.copy-btn');
     if(!copyBtn.length) return;
 
@@ -121,7 +104,36 @@
       });
     })
   }
+
+  /**
+   * 添加 按钮
+   */
+  function renderBtn() {
+    highlights.each(function () {
+      var highlightEl = $(this);
+      var offsetTop = getCopyBtnPosY(highlightEl) + MARGIN;
+      var offsetRight = getCopyBtnPosX(highlightEl) + MARGIN;
+
+      var codeEl = highlightEl.find('.code pre')[0];
+
+      var copyBtnInstance = new GenCopyBtn(offsetTop, offsetRight);
+      var copyBtnEl = copyBtnInstance.getEl();
+      copyBtnEl.addEventListener(
+        'click',
+        copyText.bind(this, codeEl, copyBtnInstance)
+      )
+
+      nodeFragment.appendChild(copyBtnEl);
+    })
+
+    $(mainSelector).append(nodeFragment);
+  }
   
-  window.addEventListener('resize', autoSetPos);
+  function onLoad() {
+    renderBtn()
+  }
+
+  window.addEventListener('load', onLoad)
+  window.addEventListener('resize', onResize);
   
 })(jQuery, window)
