@@ -2,6 +2,7 @@ categories: 类别
 search: 搜索
 tags: 标签
 tagcloud: 标签云
+category: 分类
 tweets: 推文
 prev: 上一页
 next: 下一页
@@ -15,5 +16,5 @@ older: 后一篇
 share: 分享
 powered_by: Powered by
 rss_feed: RSS Feed
-category: 分类
 tag: Tag
+theme: Theme

@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <%
   var title = page.title;
-
   if (is_archive()) {
     title = __('archive_a');
     if (is_month()) {
@@ -29,14 +29,14 @@
   <% } else if (config.description){ %>
   <meta name="description" content="<%= config.description %>">
   <% } %>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>
     <% if (title){ %><%= title %> |
     <% } %>
-    <%= config.title %></title>
+    <%= config.title %>
+  </title>
   <% if (theme.favicon){ %>
-  <link rel="shortcut icon" href="<%- theme.favicon %>">
-  <% } %>
+    <link rel="shortcut icon" href="<%- theme.favicon %>">
+    <% } %>
   <%- css('css/style') %>
   <% if (theme.fancybox){ %>
   <%- css('fancybox/jquery.fancybox.min') %>

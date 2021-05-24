@@ -21,14 +21,18 @@
 
     <div class="article-entry" itemprop="articleBody">
       <%- partial('post/justifiedGallery') %>
-      <%- partial('post/gallery') %>
-      <% if (post.excerpt && index){ %>
-      <%- post.excerpt %>
-      <% if (theme.excerpt_link){ %>
-      <a class="article-more-link" href="<%- url_for(post.path) %>">
-        <%= theme.excerpt_link %>
-      </a>
+      <% if (index){ %>
+        <%- partial('post/gallery') %>
       <% } %>
+      <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
+        <% if (theme.excerpt_link){ %>
+          <p>
+            <a class="article-more-link" href="<%- url_for(post.path) %>">
+              <%= theme.excerpt_link %>
+            </a>
+          </p>
+        <% } %>
       <% } else { %>
       <%- post.content %>
       <% } %>

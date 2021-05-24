@@ -127,26 +127,26 @@
   //
   // lazyload
   $("img.lazy").lazyload({
-    effect : "fadeIn"
+    effect: "fadeIn"
   });
 
   //
   // justifiedGallery
   $('#gallery').justifiedGallery({
-    rowHeight : 200,
-    margins : 5
+    rowHeight: 200,
+    margins: 5
   });
 
   //
   $(document).ready(function ($) {
     $('.anchor').click(function (event) {
       event.preventDefault();
-      $('html,body').animate({scrollTop: $(this.hash).offset().top}, 'smooth');
+      $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 'smooth');
     });
   });
 
   // To top
-  (function($) {
+  (function ($) {
     // When to show the scroll link
     // higher number = scroll link appears further down the page
     var upperLimit = 1000;
@@ -161,16 +161,16 @@
     scrollElem.hide();
     $(window).scroll(function () {
       var scrollTop = $(document).scrollTop();
-      if ( scrollTop > upperLimit ) {
+      if (scrollTop > upperLimit) {
         $(scrollElem).stop().fadeTo(300, 1); // fade back in
-      }else{
+      } else {
         $(scrollElem).stop().fadeTo(300, 0); // fade out
       }
     });
 
     // Scroll to top animation on click
-    $(scrollElem).click(function(){
-      $('html, body').animate({scrollTop:0}, scrollSpeed); return false;
+    $(scrollElem).click(function () {
+      $('html, body').animate({ scrollTop: 0 }, scrollSpeed); return false;
     });
   })(jQuery);
 

@@ -1,0 +1,56 @@
+
+.card-quote
+  display grid
+  grid-gap gutter-width
+  margin-bottom gutter-width
+  blockquote
+    position relative
+    margin 0
+    padding 1.5rem
+    padding-left 6rem
+    overflow auto
+    border-left none
+    border border-width border-color solid
+    border-radius 0.4rem
+    transition(transition-base)
+    line-height 1.4
+    p:first-child
+      position absolute
+      top 50%
+      left 1.5rem
+      transform translateY(-50%)
+      img
+        height 3.2rem
+        width 3.2rem
+        // rounded-circle(4.8rem)
+        // border border-width*3 border-color solid
+    h3,h4,h5
+      margin 0
+      // text-transform uppercase
+      + p
+          margin-top 0
+          color gray
+          font-size small
+    a
+      opacity 0
+      display flex
+      justify-content center
+      align-items center
+      position absolute
+      z-index 1
+      top 0
+      right 0
+      bottom 0
+      left 0
+      text-align center
+      background rgba(white, .75)
+      color sea-dark
+      text-decoration: none
+      font-size small
+      transition(transition-base)
+    &:hover
+      transform translateY(-.25rem)
+      box-shadow 0 1rem 3rem .01rem rgba(sea-dark, .1)
+      border-color froth-light
+      a 
+        opacity 1

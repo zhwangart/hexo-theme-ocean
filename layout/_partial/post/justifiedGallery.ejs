@@ -2,9 +2,9 @@
 <div class="justified-gallery" id="gallery">
   <% post.albums.forEach(function(photo){ %>
   <div>
-    <a class="fancybox" data-fancybox="images" data-caption="<%- photo[1] %>" href="<%- url_for(photo[0]) %>"
-      rel="gallery_<%= post._id %>" title="<%- photo[1] %>">
-      <img src="<%- url_for(photo[0]) %>" itemprop="image" alt="<%- photo[1] %>">
+    <a class="fancybox" data-fancybox="images" data-caption="<%- photo[2] %>" href="<%- url_for(photo[0]) %>"
+      rel="gallery_<%= post._id %>" title="<%- photo[2] %>">
+      <img src="<%- url_for(photo[1]) %>" itemprop="image" alt="<%- photo[2] %>">
     </a>
   </div>
   <% }) %>
