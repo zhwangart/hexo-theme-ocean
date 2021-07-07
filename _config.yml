@@ -59,3 +59,8 @@ valine:
   avatar: 'mp'
   pageSize: '10'
   placeholder: '请输入...'
+
+# Waline
+waline:
+  enable: false  # true
+  serverURL: # Waline ServerURL | READ MORE:https://waline.netlify.app/ 
