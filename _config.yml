@@ -6,6 +6,7 @@ menu:
   About: /about
 rss: /atom.xml
 
+
 # Miscellaneous
 favicon: /favicon.ico
 brand: /images/hexo.svg
@@ -22,10 +23,9 @@ excerpt_link: Read More...
 
 # MIIT ICP/IP/DOMAIN
 beian:
-  enable: true
-  number: ZHWANGART
+  enable: false
+  number: 
   url: https://beian.miit.gov.cn/
-
 
 # Tags
 show_count: false
