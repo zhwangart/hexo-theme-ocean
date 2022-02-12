@@ -86,8 +86,8 @@
     } else {
       var html = [
         '<div id="' + id + '" class="article-share-box">',
-        '<input class="article-share-input" value="' + url + '">',
-        '<div class="article-share-links">',
+        '<div class="article-share-input">' + url + '</div>',
+        '<div class="article-share-links" style="display: flex;justify-content: center">',
         '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
         '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
         '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
@@ -103,7 +103,7 @@
 
     box.css({
       top: offset.top + 25,
-      left: offset.left
+      left: offset.left - 50
     }).addClass('on');
   }).on('click', '.article-share-box', function (e) {
     e.stopPropagation();
