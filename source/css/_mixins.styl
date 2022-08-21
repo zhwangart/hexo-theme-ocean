@@ -51,9 +51,12 @@ border-bottom-radius(n)
 transition(transition)
   transition transition
 
-rounded-circle(size)
+sizing(size)
   width size
   height size
+
+rounded-circle(size)
+  sizing(size)
   border-radius size / 2
 
 // Media queries

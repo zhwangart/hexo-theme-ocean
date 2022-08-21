@@ -1,15 +1,19 @@
 <footer class="footer">
   <div class="outer">
-    <div class="float-right">
-      <%- partial('post/busuanzi') %>
-    </div>
     <ul class="list-inline">
       <li><%= config.title %> &copy; <%= date(new Date(), 'YYYY') %></li>
       <% if (theme.beian){ %>
-        <li><%- theme.beian.number %></li>
+        <li>
+          <%if (theme.beian.url){ %>
+            <a href="<%- url_for(theme.beian.url) %>" target="_blank"><%- theme.beian.number %></a>
+            <% } else { %>
+              <%- theme.beian.number %>
+          <% } %>
+        </li>
       <% } %>
       <li><%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a></li>
       <li><%= __('theme ') %> <a href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
     </ul>
+    <p><%- partial('post/busuanzi') %></p>
   </div>
 </footer>

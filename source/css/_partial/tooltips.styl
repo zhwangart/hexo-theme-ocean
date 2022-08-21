@@ -1,0 +1,25 @@
+//
+// Tooltips
+//
+
+.tooltip
+  position: relative
+  &::after
+    content: attr(data-tooltip)
+    position: absolute
+    z-index: 9
+    bottom: 100%
+    left: 50%
+    background-color: sea-dark
+    border-radius: 0.4rem
+    padding: 1rem
+    opacity: 0
+    pointer-events: none
+    transform: translate(-50%, 0)
+    transition: transition-base
+    color: froth
+  &:hover
+    &::after
+      opacity: 1
+      transform: translate(-50%, 0)
+    

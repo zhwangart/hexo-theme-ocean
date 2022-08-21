@@ -1,15 +1,28 @@
 <article class="archive-article archive-type-<%= post.layout %>">
+  
+  <% if(post.photos.length){ %>
+    <div class="archive-article-gallery">
+      <% post.photos.forEach(function(photo, i){ %>
+        <a class="article-gallery-img" href="<%- url_for(post.path) %>" rel="gallery_<%= post._id %>">
+          <img src="<%- url_for(photo) %>" itemprop="image">
+        </a>
+      <% }) %>
+    </div>
+  <% } %>
   <div class="archive-article-inner">
     <header class="archive-article-header">
-      <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'MM/DD'}) %>
       <%- partial('post/title', {class_name: 'archive-article-title'}) %>
+      <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'MM/DD'}) %>
     </header>
+    <% if(post.photos.length === 0){ %>
+      <%- post.excerpt %>
+    <% } %>
     <% if(page.category){ %>
-    <%- partial('post/category') %>
+      <%- partial('post/category') %>
     <% } %>
     <% if(page.tag){ %>
-    <%- partial('post/tag') %>
+      <%- partial('post/tag') %>
     <% } %>
-    <!-- <%- partial('post/gallery') %> -->
   </div>
+
 </article>

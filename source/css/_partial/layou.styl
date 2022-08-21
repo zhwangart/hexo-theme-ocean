@@ -58,6 +58,9 @@
   .jumbotron
     margin-bottom 6rem
 
+  .wrap, .outer
+    width wrap-width
+
   .content
     margin-right aside-width
 
@@ -68,16 +71,20 @@
   .navbar-toggle
     display none
 
-  .wrap, .outer
-    width wrap-width
-    padding-right 0
-    padding-left 0
-
   .local-search
     width wrap-width
 
   .card-quote
     grid-template-columns repeat(3, 1fr)
+  
+  .archive-article-title
+    margin 0
+    font-size 1.25em!important
+
+@media (min-width: 992px)
+  .wrap, .outer
+    padding-right 0
+    padding-left 0
 
 @media (min-width: 1200px)
   .tocbot
