@@ -47,6 +47,8 @@ gitalk:
   repo: # Repository name
   owner: # GitHub ID
   admin: # GitHub ID
+  proxy: # Get access_token proxy, The default is https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token, More please see https://github.com/gitalk/gitalk
+  createIssueManually: # The author can initialize the comment manually, The default is false.
 
 # Valine
 valine:
